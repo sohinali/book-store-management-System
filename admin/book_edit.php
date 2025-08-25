@@ -5,9 +5,9 @@
 
     $cq="select * from book where b_id=".$_GET['id'];
 
-    $res=mysql_query($cq,$link);
+    $res=mysqli_query($mysqli,$cq);
 
-    $crow=mysql_fetch_assoc($res);
+    $crow=mysqli_fetch_assoc($res);
 ?>
 
         <div id="page-wrapper">
@@ -50,13 +50,13 @@
                                                 <?php
                                                     include("../includes/connection.php");
 
-                                                    $cq="select * from category";
+                                                    $c="select * from category";
 
-                                                    $cres=mysql_query($cq,$link);
+                                                    $cr=mysqli_query($mysqli,$c);
 
-                                                    while($crow=mysql_fetch_assoc($cres))
+                                                    while($cw=mysqli_fetch_assoc($cr))
                                                     {
-                                                        echo '<option value="'.$crow['cat_id'].'">'.$crow['cat_nm'].'</option>';
+                                                        echo '<option value="'.$cw['cat_id'].'">'.$cw['cat_nm'].'</option>';
                                                     }
                                                 ?>
                                             </select>
@@ -92,6 +92,7 @@
 
                                         <div class="form-group">
                                             <label>Book Image</label>
+                                               <img src="../<?php echo $crow['b_img'] ?>" style="height:100px; width:80px;">
                                                 <?php
                                                     if(isset($_SESSION['error']['b_img']))
                                                     {

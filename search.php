@@ -15,7 +15,7 @@
 
 					$blq="select * from book where b_nm like '%$s%'";
 
-					$blres=mysqli_query($blq,$mysqli);
+					$blres=mysqli_query($mysqli,$blq);
 
 					while($blrow=mysqli_fetch_assoc($blres))
 					{

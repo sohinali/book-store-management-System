@@ -2,7 +2,7 @@
 
 	session_start();
 
-	include("includes/connection.php");
+	require("includes/connection.php");
 
 	if(!empty($_POST))
 	{
@@ -13,7 +13,7 @@
 		{
 			$_SESSION['error']['unm']="Please enter User Name";
 		}
-		else if(empty($row))
+		else if(empty($unm))
 		{
 			$_SESSION['error']['unm']="Wrong User Name";
 		}
@@ -38,9 +38,9 @@
 
 		$q="select * from register where r_unm='$unm'";
 
-		$res=mysql_query($q,$link);
+		$res=mysqli_query($mysqli,$q);
 
-		$row=mysql_fetch_assoc($res);
+		$row=mysqli_fetch_assoc($res);
 
 		if(!empty($_SESSION['error']))
 		{
@@ -48,7 +48,14 @@
 		}
 		else
 		{
-			echo "good";
+			$id=$row['r_id'];
+
+			$q="update register set r_pwd='$pwd' where r_id = '$id' AND r_answer = '$answer'";
+	
+			mysqli_query($mysqli,$q);
+	
+			header("location:login.php?forget");
+
 		}
 	}
 	else

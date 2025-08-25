@@ -11,7 +11,7 @@
 
 		$row=mysqli_fetch_assoc($res);
 
-		$_SESSION['cart'][]=array("nm"=>$row['b_nm'],"img"=>$row['b_img'],"price"=>$row['b_price'],"qty"=>1);
+		$_SESSION['cart'][]=array("nm"=>$row['b_nm'],"img"=>$row['b_img'],"price"=>$row['b_price'],"qty"=>$row['qty'], "bcid"=>$_GET['bcid']);
 	}
 
 	else if(!empty($_POST))

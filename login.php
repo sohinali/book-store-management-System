@@ -11,6 +11,13 @@
 				
 
 				<form class="login" action="login_process.php" method="post"  style="color:black;">
+					<?php
+			if(isset($_GET['forget']))
+			{
+			echo '<font color="red">password updated Sussessfully..</font>';
+			echo '<br><br>';
+			}
+			?>
 					
 					User Name :<br>
 					<input type="text" name="unm" class="txt"><br><br>

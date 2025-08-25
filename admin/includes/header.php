@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bookstore Management System - Admin Panel</title>
+    <title>Book store - Admin Panel</title>
 
     <!-- Core CSS - Include with every page -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Bookstore Management System</a>
+                <a class="navbar-brand" href="index.php">Book store</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -123,6 +123,25 @@
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="Users_view.php">View Users</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                         <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Orders<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="orderd.php">View</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Transaction History<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="History.php">View</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

@@ -6,9 +6,9 @@
 
 	$query="delete from category where cat_id =".$_GET['id'];
 
-	$result=mysql_query($query,$link);
+	$result=mysqli_query($mysqli,$query);
 
-	$run=mysql_fetch_assoc($result);
+	// $run=mysqli_fetch_assoc($result);
 
 	header("location:category_view.php");
 

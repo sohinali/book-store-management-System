@@ -4,11 +4,11 @@
 	
 	include("../includes/connection.php");
 
-	$query="delete from book where book_id =".$_GET['id'];
+	$query="delete from book where b_id =".$_GET['id'];
 
-	$result=mysql_query($query,$link);
+	$result=mysqli_query($mysqli,$query);
 
-	$run=mysql_fetch_assoc($result);
+	// $run=mysql_fetch_assoc($result);
 
 	header("location:category_view.php");
 

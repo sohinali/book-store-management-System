@@ -44,6 +44,9 @@
 
                                             while($book_row=mysqli_fetch_assoc($book_res))
                                             {
+                                                // echo "<pre>";
+                                                // var_dump($book_row);
+                                                // echo "</pre>";
                                                 echo '<tr class="odd gradeX">
                                                           <td>'.$count.'</td>
                                                           <td>'.$book_row['b_nm'].'</td>
@@ -54,6 +57,7 @@
                                                       
                                                     echo '<td>'.@date("d-M-y",$book_row['b_time']).'</td>
                                                           <td align="center">
+                                                          <a style="color: red;" href="book_edit.php?id='.$book_row['b_id'].'">Edit</a> &nbsp;&nbsp;
                                                             <a style="color: red;" href="process_book_del.php?id='.$book_row['b_id'].'">x</a></td>
                                                       </tr>';
                                                 $count++;

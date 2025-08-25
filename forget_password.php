@@ -1,7 +1,6 @@
 <?php
 	include("includes/header.php");
 ?>
-
 <div id="content">
 	<div class="post">
 		<h2 class="title"><a href="#">Forget Password</a></h2>
@@ -19,7 +18,10 @@
 					}
 				?>
 
+
+
 				<form class="login" action="forget_password_process.php" method="post">
+
 					
 					User Name :<br>
 						<?php 
@@ -34,7 +36,7 @@
 					Security Question :<br>
 					<select name="question" class="txt">
 						<option>Which is your Favourite Movie ?</option>
-						<option>What is your Favourite A/ctress ?<option>
+						<option>What is your Favourite Actress ?<option>
 					</select>
 					<br><br>
 

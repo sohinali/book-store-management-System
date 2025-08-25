@@ -6,9 +6,9 @@
 
 	$query="delete from register where r_id =".$_GET['id'];
 
-	$result=mysql_query($query,$link);
+	$result=mysqli_query($mysqli,$query);
 
-	$run=mysql_fetch_assoc($result);
+	//$run=mysqli_fetch_assoc($result);
 
 	header("location:users_view.php");
 

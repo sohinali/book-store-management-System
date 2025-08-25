@@ -61,7 +61,7 @@
 
 			$q="update book set b_nm='$bnm', b_cat='$cat', b_desc='$desc', b_price=$price, b_img='$b_img', b_time='$t' where b_id=".$id;
 
-			$res=mysql_query($q,$link);
+			$res=mysqli_query($mysqli,$q);
 
 			header("location:book_view.php");
 		}

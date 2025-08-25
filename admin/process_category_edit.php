@@ -19,7 +19,7 @@
 			set cat_nm='$cat'
 			where cat_id=$id";
 	
-			mysql_query($q,$link);
+			mysqli_query($mysqli,$q);
 	
 			header("location:category_view.php");
 		}

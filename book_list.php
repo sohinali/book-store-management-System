@@ -4,7 +4,7 @@ include("includes/header.php");
 
 <div id="content">
     <div class="post">
-        <h2 class="title" style="color: black;"><a href="#"><?php echo $_GET['cat']; ?></a></h2>
+        <h4 class="title" style="color: black;"><a href="#"><?php echo $_GET['cat']; ?></a></h4>
         <p class="meta"></p>
         <div class="entry">
 

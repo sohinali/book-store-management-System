@@ -42,7 +42,10 @@ echo '</ul>
 	</div>
 	<!-- end #page -->
 	<div id="footer">
-		<p style="color:black;font-size: 15px" ; >&copy; 2023. All rights reserved. Project Made By <a href="index.php" rel="nofollow" style="color:black;">Sohin Ali</a>.</p>
+		<p style="color:black;font-size: 15px;">&copy; 2024. All rights reserved. Project Made By 
+    <a href="index.php" rel="nofollow" style="color:black; text-decoration: none;">Sohin Ali</a>.
+</p>
+
 	</div>
 	<!-- end #footer -->
 </body>

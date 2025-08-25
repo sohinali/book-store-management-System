@@ -1,5 +1,6 @@
 <?php
     include("includes/header.php");
+    require("../includes/connection.php");
 ?>
 
         <div id="page-wrapper">
@@ -39,14 +40,14 @@
                                         <div class="form-group">
                                             <label>Book Category</label>
                                             <select name="cat" class="form-control">
+                                                <option value="">Select</option>
                                                 <?php
-                                                    include("../includes/connection.php");
-
+                                                    
                                                     $cq="select * from category";
 
-                                                    $cres=mysql_query($cq,$link);
-
-                                                    while($crow=mysql_fetch_assoc($cres))
+                                                    $cres=mysqli_query($mysqli, $cq);
+                                                    
+                                                    while($crow=mysqli_fetch_assoc($cres))
                                                     {
                                                         echo '<option value="'.$crow['cat_id'].'">'.$crow['cat_nm'].'</option>';
                                                     }
