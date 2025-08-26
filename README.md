@@ -1,8 +1,5 @@
 # book-store-management-System
-![Screenshot (33)](https://github.com/sohinali/book-store-management-System/assets/107634907/633704b4-853c-45ff-8634-d532bc87246a)
-![Screenshot (34)](https://github.com/sohinali/book-store-management-System/assets/107634907/19a9ef6b-c34a-401d-b70a-67a97c0d8f21)
-![Screenshot (36)](https://github.com/sohinali/book-store-management-System/assets/107634907/6d96cecb-d5bb-4243-9cd9-5da026fc3869)
-![Screenshot (35)](https://github.com/sohinali/book-store-management-System/assets/107634907/64fd2548-e051-4901-8a10-9b298ff89b5e)
+
 ![Screenshot (39)](https://github.com/sohinali/book-store-management-System/assets/107634907/6b0a95ca-235d-4bba-bd2d-18669d553240)
 ![Screenshot (38)](https://github.com/sohinali/book-store-management-System/assets/107634907/c81b1751-02f3-4a3f-9708-7b68e78a7747)
 ![Screenshot (37)](https://github.com/sohinali/book-store-management-System/assets/107634907/a496f99c-9c6a-4b96-9477-511ab7a6987b)
